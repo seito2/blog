@@ -86,9 +86,6 @@ div.contact-link > a {
   line-height: 24px;
 }
 
-h1 {
-}
-
 @media screen and (max-width: 600px) {
   main {
     grid-template-columns: 1fr;
