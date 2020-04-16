@@ -17,9 +17,16 @@
   },
   "homepage": "https://github.com/seito2/blog#readme",
   "dependencies": {
+    "clean-css": "^4.2.3",
+    "dom-parser": "^0.1.6",
+    "fs-extra": "^9.0.0",
+    "google-closure-compiler": "^20200406.0.0",
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
     "gulp-rename": "^2.0.0",
-    "gulp-sass": "^4.0.2"
+    "gulp-sass": "^4.0.2",
+    "html-minifier": "^4.0.0",
+    "marked": "^0.8.2",
+    "uglify-js": "^3.9.1"
   }
 }
