@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./index.css" />
     <title>
       宇宙WebDevBlog
     </title>
@@ -25,7 +25,18 @@
     <main>
       <div class="main">
         <h1>記事</h1>
-        <div class="article-list"></div>
+        <articles>
+          <div
+            class="article-preview"
+            onclick="window.location.href = 'article/1.html'"
+          >
+            <div class="image" no-image></div>
+            <div class="preview">
+              <h1>タイトル：　始まり</h1>
+              <p>技術ブログの始まり。</p>
+            </div>
+          </div>
+        </articles>
         <h1>タグ</h1>
         <div class="tag-list"></div>
       </div>
@@ -57,5 +68,6 @@
         </div>
       </div>
     </footer>
+    <script src="./index.js"></script>
   </body>
 </html>
