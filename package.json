@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/seito2/blog/issues"
   },
-  "homepage": "https://github.com/seito2/blog#readme"
+  "homepage": "https://github.com/seito2/blog#readme",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.0.2"
+  }
 }
