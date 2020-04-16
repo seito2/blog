@@ -1,5 +1,4 @@
 const fs = require("fs");
-const path = require("path");
 const minifier = require("html-minifier").minify;
 const CleanCSS = require("clean-css");
 const format_option = require("./format-config.json");

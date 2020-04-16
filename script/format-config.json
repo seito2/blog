@@ -1,5 +1,5 @@
 {
-  "html_option": {
+  "html": {
     "removeComments": true,
     "removeCommentsFromCDATA": false,
     "removeCDATASectionsFromCDATA": false,

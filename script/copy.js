@@ -9,7 +9,7 @@ fs.mkdirSync("docs/assets", (err) => {
   if (err) console.log(err);
 });
 
-const copyFileList = ["index.html", "index.js", "index.css"];
+const copyFileList = ["index.html", "index.js", "index.css", "reset.css"];
 copyFileList.map((path) => copyAndMinify(path));
 
 // assets
