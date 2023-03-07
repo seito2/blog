@@ -15,13 +15,13 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - run: |
-          echo MICROCMS_SERVICE_DOMAIN=${{ secrets.MICROCMS_SERVICE_DOMAIN }} >> .env
-          echo MICROCMS_SERVICE_DOMAIN=${{ secrets.MICROCMS_API_KEY }} >> .env
       - name: Build
         run: |
           npm install
           npm run build
+        env:
+          MICROCMS_SERVICE_DOMAIN: ${{ secrets.MICROCMS_SERVICE_DOMAIN }}
+          MICROCMS_SERVICE_DOMAIN: ${{ secrets.MICROCMS_API_KEY }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
