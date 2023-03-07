@@ -15,6 +15,7 @@ jobs:
         with:
           node-version: 18
       - run: |
+          touch .env
           echo MICROCMS_SERVICE_DOMAIN=${{ secrets.MICROCMS_SERVICE_DOMAIN }} >> .env
           echo MICROCMS_SERVICE_DOMAIN=${{ secrets.MICROCMS_API_KEY }} >> .env
       - name: Build
