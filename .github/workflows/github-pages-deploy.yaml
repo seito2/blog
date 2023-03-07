@@ -16,15 +16,12 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-      - uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 7.29.0
-
       - name: Build
         run: |
-          pnpm install
-          pnpm run build
-
+          npm install
+          npm run build
+        env: MICROCMS_SERVICE_DOMAIN=${{ secrets.MICROCMS_SERVICE_DOMAIN }}
+          MICROCMS_API_KEY=${{ secrets.MICROCMS_API_KEY }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
